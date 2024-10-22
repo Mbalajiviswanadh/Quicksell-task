@@ -4,21 +4,21 @@
 
 Given:
 
-| Image 1                                         |
-| ----------------------------------------------- |
-| ![Image 1](kanban-board/imgfor_readme/img1.png) |
+| Image 1                            |
+| ---------------------------------- |
+| ![Image 1](imgfor_readme/img1.png) |
 
-| Image 2                                         |
-| ----------------------------------------------- |
-| ![Image 2](kanban-board/imgfor_readme/img2.png) |
+| Image 2                            |
+| ---------------------------------- |
+| ![Image 2](imgfor_readme/img2.png) |
 
-| Image 3                                         |
-| ----------------------------------------------- |
-| ![Image 3](kanban-board/imgfor_readme/img3.png) |
+| Image 3                            |
+| ---------------------------------- |
+| ![Image 3](imgfor_readme/img3.png) |
 
-| Image 4                                         |
-| ----------------------------------------------- |
-| ![Image 4](kanban-board/imgfor_readme/img4.png) |
+| Image 4                            |
+| ---------------------------------- |
+| ![Image 4](imgfor_readme/img4.png) |
 
 ---
 
