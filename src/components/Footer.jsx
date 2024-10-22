@@ -7,7 +7,7 @@ const Footer = () => {
       <p>
         Created by <strong>Balaji Viswanadh</strong> |{" "}
         <a
-          href="https://www.linkedin.com/in/your-linkedin-profile"
+          href="https://www.linkedin.com/in/balaji-viswanadh-madhavareddy-875473220/"
           target="_blank"
           rel="noopener noreferrer"
           className="linkedin-link">
