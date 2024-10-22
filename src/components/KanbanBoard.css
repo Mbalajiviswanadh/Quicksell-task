@@ -1,7 +1,9 @@
-.kanban-container {
+/* .kanban-container {
   padding: 20px;
   background-color: #f4f5f8;
   min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
 }
 
 .header {
@@ -160,4 +162,232 @@
   border-radius: 4px;
   font-size: 12px;
   border: 1px solid #e0e0e0;
+} */
+/* ---- */
+
+.kanban-container {
+  padding: 20px;
+  background-color: #f4f5f8;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f5f8;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.display-button {
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.display-button:hover {
+  background: #f8f8f8;
+}
+
+.chevron-down {
+  font-size: 10px;
+  color: #666;
+}
+
+.options-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 280px;
+}
+
+.option-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.option-group:last-child {
+  margin-bottom: 0;
+}
+
+.option-group label {
+  display: block;
+  color: #9c9999;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.option-group select {
+  width: auto;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: white;
+  flex-shrink: 0;
+}
+
+.board {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.column {
+  min-width: 300px;
+  background: transparent;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.column-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.column-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.column-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.ticket-count {
+  padding: 0 8px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #666;
+}
+
+.column-header-right {
+  display: flex;
+  gap: 4px;
+}
+
+.add-button,
+.options-button {
+  padding: 4px 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 12px;
+}
+
+.ticket {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+.ticket:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ticket-id {
+  color: #666;
+  font-size: 14px;
+}
+
+.user-avatar img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.ticket-title {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.ticket-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.priority-icon,
+.status-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.feature-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #666;
+  border-radius: 50%;
 }
